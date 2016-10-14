@@ -11,7 +11,7 @@ The [LinuxServer.io][linuxserverurl] team brings you another container release f
 * [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
 
 # lsioarmhf/mylar
-[![](https://images.microbadger.com/badges/image/lsioarmhf/mylar.svg)](https://microbadger.com/images/lsioarmhf/mylar "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/mylar.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/mylar.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-mylar)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-mylar/)
+[![](https://images.microbadger.com/badges/version/lsioarmhf/mylar.svg)](https://microbadger.com/images/lsioarmhf/mylar "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/lsioarmhf/mylar.svg)](https://microbadger.com/images/lsioarmhf/mylar "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/lsioarmhf/mylar.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/lsioarmhf/mylar.svg)][hub][![Build Status](http://jenkins.linuxserver.io:8080/buildStatus/icon?job=Dockers/LinuxServer.io-armhf/lsioarmhf-mylar)](http://jenkins.linuxserver.io:8080/job/Dockers/job/LinuxServer.io-armhf/job/lsioarmhf-mylar/)
 [hub]: https://hub.docker.com/r/lsioarmhf/mylar/
 
 
@@ -67,6 +67,15 @@ For more detailed setup refer [mylar](https://github.com/evilhero/mylar).
 
 * To monitor the logs of the container in realtime `docker logs -f mylar`.
 
+* container version number 
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' mylar`
+
+* image version number
+
+`docker inspect -f '{{ index .Config.Labels "build_version" }}' lsioarmhf/mylar`
+
 ## Versions
 
++ **14-10-16:** Add version layer information.
 + **23.09.16:** Initial Release.

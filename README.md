@@ -83,5 +83,6 @@ For more detailed setup refer [mylar](https://github.com/evilhero/mylar).
 
 ## Versions
 
++ **07.02.17:** Rebase to alpine 3.5.
 + **14.10.16:** Add version layer information.
 + **23.09.16:** Initial Release.

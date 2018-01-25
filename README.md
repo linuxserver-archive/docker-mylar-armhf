@@ -82,6 +82,7 @@ For more detailed setup refer [mylar](https://github.com/evilhero/mylar).
 
 ## Versions
 
++ **25.01.18:** Rebase to alpine 3.7.
 + **21.07.17:** Internal git pull instead of at runtime.
 + **29.05.17:** Rebase to alpine 3.6.
 + **19.02.17:** Use quiet option for cleaner console log,

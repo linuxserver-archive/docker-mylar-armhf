@@ -82,6 +82,7 @@ For more detailed setup refer [mylar](https://github.com/evilhero/mylar).
 
 ## Versions
 
++ **17.08.18:** Rebase to alpine 3.8.
 + **06.07.18:** Add `html5lib` python package
 + **14.06.18:** Add `requests` python package
 + **25.01.18:** Rebase to alpine 3.7.

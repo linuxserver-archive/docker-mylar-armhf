@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.python.armhf:3.7
+FROM lsiobase/alpine.python.armhf:3.8
 
 # set version label
 ARG BUILD_DATE
@@ -21,9 +21,9 @@ RUN \
 	/root/.cache \
 	/tmp/*
 
-# add local files
+# add local files
 COPY root/ /
 
-# ports and volumes
+# ports and volumes
 VOLUME /config /comics /downloads
 EXPOSE 8090
